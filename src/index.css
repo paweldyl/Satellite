@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1D1E1F;
+  color: White;
+}
+
+.app {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .search-input {
+  margin-top: 30px;
+  width: 500px;
+  max-width: 80%;
+  font-size: 18px;
+}
+
+.app .search-input #search-input {
+  background-color: white;
+}
+
+.app .search-input #search-input form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .search-input #search-input form input {
+  border: none;
+  border-radius: 0px;
+  width: calc(100% - 50px);
+  padding: 15px;
+}
+
+.app .search-input #search-input form input:focus {
+  outline: none;
+}
+
+.app .search-input #search-input form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.app .search-input #search-input form button:focus {
+  outline: none;
+}
+
+.app .search-input .autocomplete-container {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.app .search-input .autocomplete-container .location {
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.app .search-input .autocomplete-container .location:hover {
+  background-color: #aaa;
+}
+
+.app .search-input .autocomplete-container.invissible {
+  display: none;
+}
+
+.app .searched-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 50px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .searched-location img {
+  width: 30%;
+  margin: 30px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .app .searched-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .app .searched-location img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
